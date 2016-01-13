@@ -1,0 +1,8 @@
+*env
+roms
+data/*.db
+data/*.xml
+__pycache__
+*.pyc
+
+arnold
