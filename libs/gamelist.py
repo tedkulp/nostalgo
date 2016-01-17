@@ -22,6 +22,7 @@ class GameList:
 
             surf = sdl2.sdlttf.TTF_RenderText_Blended(self.font, game.name.encode("utf-8"), currentColor).contents
             text = sdl2.SDL_CreateTextureFromSurface(renderer, surf)
+            sdl2.SDL_SetTextureBlendMode(text, sdl2.SDL_BLENDMODE_BLEND)
             sdl2.SDL_FreeSurface(surf)
 
             w, h = c_int(), c_int()
